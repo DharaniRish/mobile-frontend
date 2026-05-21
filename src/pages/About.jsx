@@ -1,0 +1,1 @@
+export default()=> <div className="card max-w-3xl"><h1 className="text-3xl font-bold">About</h1><p className="mt-3 text-slate-600">MobileCare Hub combines product sales, repair booking, pickup workflows, and transparent status tracking.</p></div>;

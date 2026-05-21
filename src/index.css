@@ -1,0 +1,2 @@
+@tailwind base;@tailwind components;@tailwind utilities;
+body{@apply bg-slate-50 text-slate-900}.input{@apply w-full rounded-xl border px-4 py-3}.btn{@apply rounded-xl bg-cyan-600 px-4 py-3 font-semibold text-white}.card{@apply rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200}
