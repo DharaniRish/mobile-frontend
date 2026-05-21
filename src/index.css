@@ -1,2 +1,55 @@
-@tailwind base;@tailwind components;@tailwind utilities;
-body{@apply bg-slate-50 text-slate-900}.input{@apply w-full rounded-xl border px-4 py-3}.btn{@apply rounded-xl bg-cyan-600 px-4 py-3 font-semibold text-white}.card{@apply rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply bg-slate-50 text-slate-900;
+}
+
+.input {
+  @apply w-full rounded-xl border border-slate-200 bg-white px-4 py-3 outline-none transition focus:border-cyan-500 focus:ring-4 focus:ring-cyan-100;
+}
+
+.btn {
+  @apply rounded-xl bg-cyan-600 px-4 py-3 font-semibold text-white transition hover:bg-cyan-700 disabled:cursor-not-allowed disabled:opacity-70;
+}
+
+.card {
+  @apply rounded-2xl bg-white p-5 shadow-sm ring-1 ring-slate-200;
+}
+
+.auth-page {
+  @apply mx-auto grid max-w-5xl overflow-hidden rounded-2xl bg-white shadow-sm ring-1 ring-slate-200 md:grid-cols-[1.05fr_0.95fr];
+}
+
+.auth-visual {
+  @apply hidden min-h-[620px] bg-slate-900 md:block;
+}
+
+.auth-visual img {
+  @apply h-full w-full object-cover;
+}
+
+.auth-card {
+  @apply flex flex-col justify-center gap-5 p-6 sm:p-10;
+}
+
+.auth-card h1 {
+  @apply text-3xl font-bold text-slate-950;
+}
+
+.auth-kicker {
+  @apply mb-2 text-sm font-semibold uppercase tracking-wide text-cyan-700;
+}
+
+.auth-error {
+  @apply rounded-xl border border-red-100 bg-red-50 px-4 py-3 text-sm leading-6 text-red-700;
+}
+
+.auth-switch {
+  @apply text-center text-sm text-slate-600;
+}
+
+.auth-switch a {
+  @apply font-semibold text-cyan-700 hover:text-cyan-800;
+}
